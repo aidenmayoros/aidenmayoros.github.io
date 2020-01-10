@@ -1,0 +1,39 @@
+h1 {
+    font-family:'headerfont';
+    font-family: 'Kumar One', cursive;
+    
+}
+
+header, footer {
+    background-color: rgb(86, 96, 107);
+    padding: 1em;
+    color: white;
+    border-color: black;
+    border-radius: 20px;
+}
+
+footer {
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+    max-height: 3.5em;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 5em;
+    text-align: center;
+}
+
+#profilepic {
+    height: 200px;
+}
+
+main, footer, header {
+    max-width: 70em;
+    margin: auto;
+
+}
+
