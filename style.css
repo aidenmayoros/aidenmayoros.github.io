@@ -1,7 +1,7 @@
 h1 {
     font-family:'headerfont';
     font-family: 'Kumar One', cursive;
-    
+    text-align: center;
 }
 
 header, footer {
@@ -32,7 +32,7 @@ header {
 }
 
 main, footer, header {
-    max-width: 70em;
+    max-width: 40em;
     margin: auto;
 
 }
