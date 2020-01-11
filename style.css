@@ -1,10 +1,11 @@
 h1 {
-    font-family:'headerfont';
+    font-family: 'headerfont';
     font-family: 'Kumar One', cursive;
     text-align: center;
 }
 
-header, footer {
+header,
+footer {
     background-color: rgb(86, 96, 107);
     padding: 1em;
     color: white;
@@ -31,9 +32,10 @@ header {
     height: 200px;
 }
 
-main, footer, header {
+main,
+footer,
+header {
     max-width: 40em;
     margin: auto;
 
 }
-
