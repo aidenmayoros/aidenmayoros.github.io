@@ -2,6 +2,11 @@ h1 {
     font-family: 'headerfont';
     font-family: 'Kumar One', cursive;
     text-align: center;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1rem;
 }
 
 header,
@@ -22,7 +27,6 @@ footer {
 }
 
 header {
-    display: flex;
     justify-content: space-between;
     height: 5em;
     text-align: center;
@@ -30,6 +34,8 @@ header {
 
 #profilepic {
     height: 200px;
+    border-radius: 20px;
+    float: right;
 }
 
 main,
