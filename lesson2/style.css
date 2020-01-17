@@ -1,0 +1,101 @@
+header,
+footer {
+    background-color: rgb(14, 18, 56);
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    text-align: center;
+    margin: auto;
+    padding: .5rem;
+    grid-gap: 10px;
+}
+
+.column {
+    text-align: center;
+    background-color: lightgrey;
+    padding: .5rem;
+    border-radius: .3rem;
+    font-size: 1em;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.column_title {
+    text-align: center;
+    color: white;
+    padding: .5rem;
+    background-color: black;
+    border-radius: .3rem;
+    font-size: 1.5rem;
+}
+
+img {
+    grid-area: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.heading {
+    color: white;
+}
+
+.aiden {
+    color: white;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+a {
+    font-size: 1.2em;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.end {
+    color: white;
+}
+
+footer {
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.5em;
+}
+
+text {
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 60em) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 37.5rem) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 23.5em) {
+    main {
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+}
