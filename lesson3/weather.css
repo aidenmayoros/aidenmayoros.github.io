@@ -1,0 +1,91 @@
+h1, h2, h3 {
+    font-family: 'Acme', sans-serif;
+}
+
+body {
+    font-family: 'Questrial', sans-serif;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+header,
+footer {
+    background-color: #b5ffe9;
+    text-align: center;
+    align-items: center;
+    padding: 1em;
+    border-radius: .5em;
+}
+
+#icon {
+    float: left;
+    width: 60px;
+    height: auto;
+}
+
+main {
+    background-color: #C9C9C9;
+    border-radius: .5em;
+    margin: .5em;
+    padding: .2em;
+    font-size: 1.1em;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin: .6em;
+}
+
+#colorimg {
+    width: 50%;
+    height: auto;
+}
+
+#typographyimage {
+    width: 90%;
+    padding: 2em;
+}
+
+#colorcontainer,
+#typographysection {
+    display: flex;
+    justify-content: center;
+}
+
+#manonphone {
+    width: 30%;
+    height: auto;
+}
+
+#oldcouple {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    padding: 1em;
+}
+
+#personas1 {
+    display: flex;
+    padding: 1em;
+}
+
+.personacontent {
+    justify-content: space-between;
+
+}
+
+#personas2 {
+    display: flex;
+}
+
+.details {
+    padding-left: 1em;
+}
+
+.text {
+    padding: .5em 1em .5em 1em;
+}
+
