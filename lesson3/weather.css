@@ -1,4 +1,6 @@
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Acme', sans-serif;
 }
 
@@ -13,7 +15,7 @@ footer {
     background-color: #b5ffe9;
     text-align: center;
     align-items: center;
-    padding: 1em;
+    padding: .5em;
     border-radius: .5em;
 }
 
@@ -29,14 +31,29 @@ main {
     margin: .5em;
     padding: .2em;
     font-size: 1.1em;
-    
+
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.2em;
-    margin: .6em;
+    background-color:#CEABB1;
+    text-align: center;
+    border-radius: .5em;
+    margin-top: .5em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li a {
+    display: inline-block;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 0.95rem;
 }
 
 #colorimg {
@@ -89,3 +106,22 @@ nav {
     padding: .5em 1em .5em 1em;
 }
 
+
+
+
+
+
+@media only screen and (min-width: 37.5em) {
+
+    nav ul {
+        display: inline-block;
+    }
+
+}
+
+@media only screen and (min-width: 23.5em) {
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+}
