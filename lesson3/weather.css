@@ -39,6 +39,9 @@ nav {
     text-align: center;
     border-radius: .5em;
     margin-top: .5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 nav ul {
@@ -47,12 +50,11 @@ nav ul {
     padding: 0;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 nav li a {
     display: inline-block;
-    text-align: center;
     padding: 0.75rem;
     text-decoration: none;
     font-size: 0.95rem;
@@ -116,20 +118,22 @@ nav a:hover {
 
 
 
-/*
-@media only screen and (min-width: 23.5em) {
+
+@media only screen and (max-width: 32.5em) {
     nav ul {
-        display: block;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    nav ul li a {
-        font-size: 3em;
+    body {
+        padding: 0;
     }
 
     #personas1,
     #personas2 {
         font-size: 2em;
+        display: block;
     }
 
     #manonphone {
@@ -139,5 +143,14 @@ nav a:hover {
 
     main {
         padding: 0;
+    }
+
+    .details {
+        font-size: .5em;
+    }
+
+    #colorimg,
+    #typographyimage {
+        width: 100%;
     }
 }
