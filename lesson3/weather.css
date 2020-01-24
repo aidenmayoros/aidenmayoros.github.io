@@ -46,6 +46,8 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 nav li a {
@@ -54,6 +56,12 @@ nav li a {
     padding: 0.75rem;
     text-decoration: none;
     font-size: 0.95rem;
+}
+
+nav a:hover {
+    background-color: #C9C9C9;
+    border-radius: 1em;
+    
 }
 
 #colorimg {
@@ -106,23 +114,30 @@ nav li a {
     padding: .5em 1em .5em 1em;
 }
 
+
+
 /*
-*/
-
-
-
-
-@media only screen and (min-width: 37.5em) {
-
-    nav ul {
-        display: inline-block;
-    }
-
-}
-
 @media only screen and (min-width: 23.5em) {
     nav ul {
         display: block;
         text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 3em;
+    }
+
+    #personas1,
+    #personas2 {
+        font-size: 2em;
+    }
+
+    #manonphone {
+        width: 50%;
+        height: 20%;
+    }
+
+    main {
+        padding: 0;
     }
 }
