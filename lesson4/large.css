@@ -9,4 +9,13 @@
         padding-left: 15%;
         padding-right: 15%;
     }
+
+    .article {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #articleimg {
+        width: auto;
+    }
 }
