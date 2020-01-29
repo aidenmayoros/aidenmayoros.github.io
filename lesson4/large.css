@@ -1,3 +1,12 @@
+/* Display for desktop view */
 @media only screen and (min-width: 60em) {
-    
+    #icon {
+        width: 100px;
+    }
+
+    main,
+    footer {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
 }
