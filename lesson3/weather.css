@@ -28,8 +28,9 @@ footer {
 main {
     background-color: #C9C9C9;
     border-radius: .5em;
-    margin: .5em;
-    padding: .2em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    padding: .5em;
     font-size: 1.1em;
 
 }
