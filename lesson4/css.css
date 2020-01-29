@@ -1,0 +1,93 @@
+
+h1,
+h2,
+h3 {
+    font-family: 'Acme', sans-serif;
+}
+
+body {
+    font-family: 'Questrial', sans-serif;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+header,
+footer {
+    background-color: #b5ffe9;
+    text-align: center;
+    align-items: center;
+    padding: .5em;
+    border-radius: .5em;
+}
+
+.headerdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon {
+    width: 60px;
+    height: auto;
+    margin-right: 1em;
+}
+
+#moto {
+    margin-left: 4rem;
+}
+
+
+nav {
+    background-color:#CEABB1;
+    border-radius: .5em;
+    margin-top: .5em;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li a {
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: black;
+    padding: .1em;
+    border-radius: 1em;
+}
+
+nav a:hover {
+    background-color: #C9C9C9;
+}
+
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+
+main {
+    background-color: #C9C9C9;
+    border-radius: .5em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    padding: .5em;
+    font-size: 1.1em;
+
+}
+    
+    
+    .navigation li:first-child {
+        display: block;
+        padding: 1em;
+    }
+    
+   
