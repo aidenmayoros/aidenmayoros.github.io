@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the home page for Preston Town">
+    <link href="css.css" rel="stylesheet">
+    <link href="medium.css" rel="stylesheet">
+    <link href="large.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Preston Town Home Page</title>
+</head>
+
+<body>
+    <header>
+        <img id="icon" src="/lesson3/images/Weathericon.png" alt="Icon image for Easy Weather Info">
+        <section id="headerdiv">
+        <h1>Easy Weather Info</h1>
+        <div id="moto">Making Weather Info Easy!</div>
+        </section>  
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li id="menu"><a onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="">Home</a></li>
+            <li><a class ="current" href="">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li><a href="">Storm Center</a></li>
+            <li><a href="">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section1">
+            <div>
+                <img class="hero" src="images/heroimage.jpg">
+            </div>
+            <div class="weathersummary">
+                <h3>Weather Summary:</h3>
+                <p>Temperature: 35° F</p>
+                <p>Humidity: 30%</p>
+                <p>Sky: Cloudy</p>
+                <p>Wind Speed: 5mph</p>
+            </div>
+        </section>
+
+        <section class="section2">
+            <h3 class="forecastheader">5 day Forecast:</h3>
+            <div class="forecast">
+                <table>
+                    <tr>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                    <tr>
+                        <td>76°F</td>
+                        <td>80°F</td>
+                        <td>56°F</td>
+                        <td>70°F</td>
+                        <td>67°F</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="section3">
+            <h3>Article:</h3>
+            <div class="article">
+                <p>ksjdng skmg winpqfiohapo mdsvcfoudbwgnewopi gbiwqekgnewqgbniej kgneipiwn egouiwengw sdgsdg sdgerherhjkhnh pierjhierhmnriehnm oewirnhgoierhn operinhgioerhn eorihnioerhn eorihgnierohn eorihneirhn opeinhrierhn uwrenbgurn wuiengiweug oewriugnwoeign oweingoiwue gn woiengwiognweiognweg woeignwioegnwoeng weignoweignowgn wiengwoiegn wioegnwoiegn weoiugn wioegn inwegoi nweign wiegn wiegn iwegn wiegnweoignweoignweoignweopgjm weig noi niwen ion in.ksjdng skmg winpqfiohapo mdsvcfoudbwgnewopi gbiwqekgnewqgbniej kgneipiwn egouiwengw sdgsherhjkhnh pierjhierhmnriehnm oewirnhgoierhn operinhgioerhn eorihnioerhn eorihgnierohn eorihneirhn opeinhrierhn uwrenbgurn wuiengiweug oewriugnwoeign oweingoiwue gn woiengwiognweiognweg woeignwioegnwoeng weignoweignowgn wiengwoiegn wioegnwoiegn weoiugn wioegn inwegoi nweign wiegn wiegn iwegn wiegnweoignweoignweoignweopgjm weig non ion in</p>
+                <img id="articleimg" src="images/imageplaceholder.png">
+            </div>
+        </section>
+
+        <section class="section4">
+            <img id="map" src="images/imageplaceholder.png">
+            <p>Contact Info:</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2020 | Aiden M. Mayoros | Goodyear, AZ |
+        <br>
+        <span id="date"></span></p>
+        <script src="js.js"></script>
+    </footer>
+</body>
+
+</html>
