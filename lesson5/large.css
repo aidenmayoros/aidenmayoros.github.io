@@ -10,12 +10,15 @@
         padding-right: 15%;
     }
 
+    .section3 {
+        display: block;
+    }
+
     .article {
-        display: flex;
-        flex-direction: row;
+        display: block;
     }
 
     #articleimg {
-        width: auto;
+           
     }
 }

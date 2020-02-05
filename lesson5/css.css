@@ -172,19 +172,20 @@ table {
 .section3 {
     background-color: #C9C9C9;
     border-radius: .5em;
-    display: flex;
+    
 }
 
 .article {
-    display: flex;
-    flex-direction: column;
+    
 }
 
 #articleimg {
-    width: 50%;
-    padding-right: 2em;
-    padding-bottom: 2em;
-    padding-left: 1em;
+    width: 40%;
+    height: 40%;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: .5em;
+    float: right;
 }
 
 .section4 {
