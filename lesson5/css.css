@@ -191,6 +191,14 @@ table {
 .section4 {
     background-color: #C9C9C9;
     border-radius: .5em;
+}
+
+.contact {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: .5em;
+}
+
+#map {
+    width: 40%;
 }
