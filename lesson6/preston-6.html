@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the home page for Preston Town">
+    <link href="css.css" rel="stylesheet">
+    <link href="medium.css" rel="stylesheet">
+    <link href="large.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Preston Town Home Page</title>
+</head>
+
+<body>
+    
+        <div id="banner">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        </div>
+    
+    <header>
+        <img id="icon" src="/lesson3/images/Weathericon.png" alt="Icon image for Easy Weather Info">
+        <section id="headerdiv">
+            <h1>Easy Weather Info</h1>
+            <div id="moto">Making Weather Info Easy!</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li id="menu"><a onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="">Home</a></li>
+            <li><a class="current" href="">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li><a href="">Storm Center</a></li>
+            <li><a href="">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section1">
+            <div>
+                <picture>
+                    <source srcset="images/smallheroimage400px.jpg" media="(max-width: 400px)">
+                    <source srcset="images/mediumheroimage800px.jpg" media="(min-width: 401px) and (max-width: 959px">
+                    <source srcset="images/largehero1278.jpg" media="(min-width: 960px)">
+                    <img class="hero" src="images/heroimage.jpg" alt="A image of a sunset forrest">
+                </picture>
+            </div>
+            <div class="weathersummary">
+                <h3>Weather Summary:</h3>
+                <p>Temperature: <span id="temp">37</span>° F</p>
+                <p>Wind Speed: <span id="wind">5</span> Mph</p>
+                <p>Wind Chill:<span id="windchill"><script src="js/windchill.js"></script></span></p>
+                <p>Humidity: 30%</p>
+                <p>Sky: Sunny</p>
+            </div>
+        </section>
+
+        <section class="section2">
+            <h3 class="forecastheader">5 day Forecast:</h3>
+            <div class="forecast">
+                <table>
+                    <tr>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                    <tr>
+                        <td>76°F</td>
+                        <td>80°F</td>
+                        <td>56°F</td>
+                        <td>70°F</td>
+                        <td>67°F</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="section3">
+            
+            <h3>Article:</h3>
+
+            <div class="article">
+                <img id="articleimg" src="images/articleimage.jpg" alt="image of a man working at his desk with his laptop">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae nam nulla pariatur beatae repellendus
+                    debitis optio voluptatem, veniam quis quisquam nemo cum ipsum eaque reiciendis aliquam. Minima
+                    earum, natus nemo quisquam nisi, illum provident molestias amet odio consequatur architecto maxime
+                    cumque. Sequi at asperiores, libero perferendis hic aperiam? Eligendi necessitatibus, natus rerum
+                    laboriosam quia at iste, libero ad ut modi minus rem aut molestiae pariatur cupiditate dicta,
+                    nesciunt aperiam dolorum commodi officia nemo illo reprehenderit sunt. Fuga labore cupiditate
+                    delectus, deleniti impedit dolore ut. Suscipit molestiae alias quo blanditiis repudiandae, atque
+                    ipsum aliquam, laborum totam deserunt rem unde ut sit minus eaque odit? Iusto debitis magnam esse
+                    dolorem. Similique consequatur magnam dicta omnis corporis fugiat! Neque impedit excepturi
+                    praesentium rerum sapiente accusantium. Animi, expedita mollitia! Placeat minus velit commodi natus
+                    alias expedita cum, accusamus ad dignissimos in reiciendis mollitia dolorem deserunt atque cumque,
+                    excepturi facilis. Corrupti saepe, quidem maxime provident ea perspiciatis recusandae numquam ipsam
+                    ullam deleniti! Delectus quibusdam nostrum blanditiis nesciunt atque quis omnis vitae voluptatem
+                    quaerat tenetur? Dolorum ea deleniti excepturi eum quisquam cum consequatur labore eveniet quam,
+                    provident voluptatem perspiciatis at atque similique, nemo quod. Velit cupiditate, voluptatum quae
+                    beatae harum alias incidunt accusamus animi ad ex?</p>
+
+            </div>
+        </section>
+
+        <section class="section4">
+            <h3>Contact Info:</h3>
+            <div class="contact">
+                <img id="map" src="images/prestonmap.png" alt="a image of the map of preston">
+
+                <div>
+                    <p>Easy Weather Info</p>
+                    <p>Preston, Idaho</p>
+                    <p>(444)555-5555</p>
+                    <p>Info@easyweather.info</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2020 | Aiden M. Mayoros | Goodyear, AZ |
+            <br>
+            <span id="date"></span></p>
+        <script src="js/js.js"></script>
+    </footer>
+    <script src="js/banner.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+		WebFont.load({
+			google: {
+			  families: [
+                 "Questrial",
+                 "Acme"
+			  ]
+			}
+	 	 });
+	</script>
+</body>
+
+</html>
