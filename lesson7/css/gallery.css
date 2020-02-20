@@ -1,0 +1,120 @@
+h1,
+h2,
+h3 {
+    font-family: 'Acme', sans-serif;
+}
+
+body {
+    font-family: 'Questrial', sans-serif;
+
+}
+
+header,
+footer {
+    background-color: #b5ffe9;
+    text-align: center;
+    align-items: center;
+    padding: .5em;
+    border-radius: .5em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon {
+    width: 60px;
+    height: auto;
+    margin-right: 1em;
+}
+
+#moto {
+    font-style: italic;
+}
+
+
+nav {
+    background-color: #CEABB1;
+    border-radius: .5em;
+    margin-top: .5em;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul .current {
+    background-color: #b5ffe9;
+}
+
+nav li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: black;
+    padding: .2em;
+    border-radius: 1em;
+}
+
+nav a:hover {
+    background-color: #C9C9C9;
+}
+
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+main {
+    border-radius: .5em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    padding: .5em;
+    font-size: 1.1em;
+}
+
+
+.navigation li:first-child {
+    display: block;
+    padding: 1em;
+}
+
+#gallery {
+    text-align: center;
+    width: 100%;
+}
+
+#galleryimages {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5em;
+}
+
+img[data-src] {
+    filter: blur(0.5em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    max-width: 100%;
+  }
