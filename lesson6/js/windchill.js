@@ -17,7 +17,3 @@ function generateWindChill(temp, wind) {
 generateWindChill(temp, wind);
 
 document.getElementById("windchill").innerHTML = " " + generateWindChill(temp, wind) + "°" + " " + "F"; 
-
-console.log(temp);
-console.log(wind);
-console.log(generateWindChill(temp, wind));
