@@ -9,6 +9,16 @@ body {
 
 }
 
+#banner {
+    background-color: #CEABB1;
+    text-align: center;
+    align-items: center;
+    padding: 1.5em;
+    border-radius: .5em;
+    font-size: 1.2em;
+
+}
+
 header,
 footer {
     background-color: #b5ffe9;
