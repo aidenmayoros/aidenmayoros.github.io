@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the home page for Preston Town">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/homemedium.css" rel="stylesheet">
+    <link href="css/homelarge.css" rel="stylesheet">
+    <title>Home page</title>
+
+</head>
+
+<body>
+
+    <div id="banner">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+
+    <header>
+        <img id="icon" src="/lesson3/images/Weathericon.png" alt="Icon image for Easy Weather Info">
+        <section id="headerdiv">
+            <h1>Easy Weather Info</h1>
+            <div id="moto">Making Weather Info Easy!</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li id="menu"><a onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="/lesson6/preston-6.html">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li><a class="current" href="">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="town">
+            <h2>Town Home Page</h2>
+            <div class="town-data"></div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2020 | Aiden M. Mayoros | Goodyear, AZ |
+            <br>
+            <span id="date"></span></p>
+        <script src="js/js.js"></script>
+    </footer>
+    <script src="JS/banner.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/home.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    "Questrial",
+                    "Acme"
+                ]
+            }
+        });
+    </script>
+
+</body>
+
+</html>
