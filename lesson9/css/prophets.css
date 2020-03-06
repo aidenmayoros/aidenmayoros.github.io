@@ -1,0 +1,32 @@
+body {
+    font-family: 'Arvo', serif;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+section {
+    background-color: #C8BFDD;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px black solid;
+    margin: .5em;
+    padding: .5em;
+}
+
+h1,
+h2 {
+    color: #6D3EE4;
+}
+
+img {
+    width: 50%;
+    box-shadow: 0 0 50px;
+}
