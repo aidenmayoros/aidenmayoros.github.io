@@ -1,3 +1,4 @@
+
 h1,
 h2,
 h3 {
@@ -109,14 +110,22 @@ main {
 .town-data {
     display: grid;
     grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .town {
     background-color: #C9C9C9;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
 }
 
 div.town img {
     width: 100%;
+    border-radius: 1em;
     
 }
 
@@ -124,6 +133,12 @@ div.town section {
     margin: .5em;
     padding: .5em;
     background-color: white;
+    border-radius: 1em;
+}
+
+.motto {
+    font-style: italic;
+    margin-bottom: 3em;
 }
 
 
