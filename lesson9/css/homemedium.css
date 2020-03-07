@@ -14,6 +14,14 @@
         display: flex;
     }
 
+    main {
+        padding: .5em;
+        font-size: 1.3em;
+    }
+
+    .town {
+        margin: 1em;
+    }
 
     .town-data {
         display: grid;

@@ -98,8 +98,7 @@ main {
     border-radius: .5em;
     margin-top: .5em;
     margin-bottom: .5em;
-    padding: .5em;
-    font-size: 1.3em;
+    width: 100%;
 }
 
 .navigation li:first-child {
@@ -119,7 +118,6 @@ main {
     background-color: #C9C9C9;
     border-radius: 1em;
     padding: 1em;
-    margin: 1em;
     text-align: center;
 }
 
