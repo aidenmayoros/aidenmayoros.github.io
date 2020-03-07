@@ -1,6 +1,7 @@
 /* Display for the Tablet view */
 @media only screen and (min-width: 32.5em) {
 
+
     #menu {
         display: none;
     }
@@ -15,7 +16,6 @@
     }
 
     main {
-        padding: .5em;
         font-size: 1.3em;
     }
 
