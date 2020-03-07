@@ -4,10 +4,8 @@
         width: 100px;
     }
 
-
     main,
     footer {
-        
         font-size: 1em;
     }
 
@@ -25,6 +23,21 @@
         grid-template-columns: 1fr;
     }
 
-    
+    .section3 {
+        display: block;
+    }
+
+    .article {
+        display: block;
+        width: 100%;
+    }
+
+    #articleimg {
+        width: 20em;
+        padding-right: 1em;
+        padding-bottom: 1em;
+        padding-left: .5em;
+        float: right;
+    }
 
 }
