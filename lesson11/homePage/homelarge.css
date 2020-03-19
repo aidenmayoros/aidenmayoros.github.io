@@ -1,0 +1,43 @@
+/* Display for desktop view */
+@media only screen and (min-width: 60em) {
+    #icon {
+        width: 100px;
+    }
+
+    main,
+    footer {
+        font-size: 1em;
+    }
+
+    .town-data {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        grid-gap: 1rem;
+    }
+
+    .town {
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    .section3 {
+        display: block;
+    }
+
+    .article {
+        display: block;
+        width: 100%;
+    }
+
+    #articleimg {
+        width: 20em;
+        padding-right: 1em;
+        padding-bottom: 1em;
+        padding-left: .5em;
+        float: right;
+    }
+
+}

@@ -5,7 +5,7 @@ fetch(apiURL)
     .then((jsObject) => {
         console.log(jsObject);
 
-        let currentTemp = document.querySelector('#temp');
+        let currentTemp = document.getElementById('temp');
         currentTemp.textContent = jsObject.main.temp;
         let temp = Math.round(jsObject.main.temp);
         

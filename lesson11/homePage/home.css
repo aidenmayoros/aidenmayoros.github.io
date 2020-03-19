@@ -1,0 +1,153 @@
+
+h1,
+h2,
+h3 {
+    font-family: 'Acme', sans-serif;
+}
+
+body {
+    font-family: 'Questrial', sans-serif;
+
+}
+
+#banner {
+    background-color: #CEABB1;
+    text-align: center;
+    align-items: center;
+    padding: 1.5em;
+    border-radius: .5em;
+    font-size: 1.2em;
+
+}
+
+header,
+footer {
+    background-color: #b5ffe9;
+    text-align: center;
+    align-items: center;
+    padding: .5em;
+    border-radius: .5em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon {
+    width: 60px;
+    height: auto;
+    margin-right: 1em;
+}
+
+#moto {
+    font-style: italic;
+}
+
+
+nav {
+    background-color: #CEABB1;
+    border-radius: .5em;
+    margin-top: .5em;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul .current {
+    background-color: #b5ffe9;
+}
+
+nav li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: black;
+    padding: .2em;
+    border-radius: 1em;
+}
+
+nav a:hover {
+    background-color: #C9C9C9;
+}
+
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+main {
+    border-radius: .5em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    width: 100%;
+}
+
+.navigation li:first-child {
+    display: block;
+    padding: 1em;
+}
+
+.town-data {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.town,
+.section3 {
+    background-color: #C9C9C9;
+    border-radius: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+div.town img {
+    width: 100%;
+    border-radius: 1em;
+    
+}
+
+div.town section {
+    margin: .5em;
+    padding: .5em;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.article {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+#articleimg {
+    width: 100%;
+    height: 40%;
+}
+
+.motto {
+    font-style: italic;
+    margin-bottom: 3em;
+}
+

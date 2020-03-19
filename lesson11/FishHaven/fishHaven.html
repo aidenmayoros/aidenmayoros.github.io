@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the Home page for Preston Town">
+    <link href="css.css" rel="stylesheet">
+    <link href="medium.css" rel="stylesheet">
+    <link href="large.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Preston Town Home Page</title>
+</head>
+
+<body>
+    
+        <div id="banner">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        </div>
+    
+    <header>
+        <img id="icon" src="/lesson3/images/Weathericon.png" alt="Icon image for Easy Weather Info">
+        <section id="headerdiv">
+            <h1>Easy Weather Info</h1>
+            <div id="moto">Making Weather Info Easy!</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li id="menu"><a onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="/lesson11/homePage/index.html">Home</a></li>
+            <li><a href="/lesson11/preston.html">Preston</a></li>
+            <li><a href="/lesson11/sodaSprings/sodaSprings.html">Soda Springs</a></li>
+            <li><a class="current" href="/lesson11/FishHaven/fishHaven.html">Fish Haven</a></li>
+            <li><a href="/lesson11/stormCenter/stormcenter.html">Storm Center</a></li>
+            <li><a href="/lesson11/gallery/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section1">
+            <div>
+                <picture>
+                    <source srcset="images/smallheroimage400px.jpg" media="(max-width: 400px)">
+                    <source srcset="images/mediumheroimage800px.jpg" media="(min-width: 400px) and (max-width: 960px">
+                    <source srcset="images/largehero1278.jpg" media="(min-width: 960px)">
+                    <img class="hero" src="images/heroimage.jpg" alt="A image of a sunset forrest">
+                </picture>
+            </div>
+            <div class="weathersummary">
+                <h3>Weather Summary:</h3>
+                <p>Currently: <span id="current"></span></p>
+                <p>Temperature: <span id="temp"></span>° F</p>
+                <p>Wind Speed: <span id="wind"></span> Mph</p>
+                <p>Wind Chill:<span id="windchill"></span>° F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+            </div>
+        </section>
+
+        <section class="section2">
+            <h3 class="forecastheader">5 day Forecast:</h3>
+            <div class="container">
+                <div class="forcast-card">
+                  <div class="forcast-day-header" id="day0"></div>
+                  <div class="forcast-day-content">
+                    <img src="" id="weather-icon0" alt="Weather Icon">
+                    <div class="forcast-day-content-temp" id="forcast0"></div>
+                  </div>
+                </div>
+                <div class="forcast-card">
+                  <div class="forcast-day-header" id="day1"></div>
+                  <div class="forcast-day-content">
+                    <img src="" id="weather-icon1" alt="Weather Icon">
+                    <div class="forcast-day-content-temp" id="forcast1"></div>
+                  </div>
+                </div>
+                <div class="forcast-card">
+                  <div class="forcast-day-header" id="day2"></div>
+                  <div class="forcast-day-content">
+                    <img src="" id="weather-icon2" alt="Weather Icon">
+                    <div class="forcast-day-content-temp" id="forcast2"></div>
+                  </div>
+                </div>
+                <div class="forcast-card">
+                  <div class="forcast-day-header" id="day3"></div>
+                  <div class="forcast-day-content">
+                    <img src="" id="weather-icon3" alt="Weather Icon">
+                    <div class="forcast-day-content-temp" id="forcast3"></div>
+                  </div>
+                </div>
+                <div class="forcast-card">
+                  <div class="forcast-day-header" id="day4"></div>
+                  <div class="forcast-day-content">
+                    <img src="" id="weather-icon4" alt="Weather Icon">
+                    <div class="forcast-day-content-temp" id="forcast4"></div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <section class="section3">
+            
+            <h3>How Fishing Makes You A Better Person (According To Science):</h3>
+            <p><em>By Abigail Wise</em></p>
+
+            <div class="article">
+                <img id="articleimg" src="/lesson11/gallery/images/rainbow350x200.jpg" alt="image of a man working at his desk with his laptop">
+                <p>Fishing is one of the most accessible outdoor sports. Nearly anyone, no matter age, income level or even fitness ability, can easily participate. And the sport is no longer the boys' club it was once thought of either. Of the 46 million Americans who fish today, over one third of them are women, according to a new report released by the Recreational Boating and Fishing Foundation and the Outdoor Foundation. There's also growing age and ethnic diversity within the sport. Whether they grew up heading out onto the lake every Sunday with Grandpa or are one of the millions trying the sport for the first time every year, those who fish have a direct connection to health and well-being. Here's how fishing can help you lead a happier, healthier life.</p>
+                <p>While fishing itself isn't necessarily going to get your heart rate up, many of the best fishing spots require a bit of paddling, biking or hiking to reach, all of which have proven cardiovascular benefits. "You can make your fishing excursion as physical as you want," Janna Superstein, president of fly fishing company Superfly International Inc., tells The Huffington Post. She stresses, however, that you don't need to be incredibly active to participate. "Even just getting out there, you'll still get the benefits of the outdoors and maybe that's the beginning of a new fit, healthy lifestyle," she says.</p>
+                <p>Of course, just spending time outside is good for your body and your brain. The outdoors gives us plenty of vitamin D (but don't forget the SPF!), makes us happier and helps us age gracefully. Fly fishing -- a specific type of fishing that incorporates artificial "flies" and a weighted line -- may also help women with breast cancer recover. Groups like Casting for Recovery combine breast cancer education with the sport as a form of support, therapy and exercise. Casting for Recovery's site says that the gentle motion of fly casting resembles exercises often prescribed after surgery or radiation to promote soft tissue stretching. The group is designed for women of all ages in all stages of treatment and recovery.</p>
+
+            </div>
+        </section>
+
+        <section class="section4">
+            <h3>Contact Info:</h3>
+            <div class="contact">
+                <img id="map" src="images/prestonmap.png" alt="a image of the map of preston">
+
+                <div>
+                    <p>Easy Weather Info</p>
+                    <p>Preston, Idaho</p>
+                    <p>(444)555-5555</p>
+                    <p>Info@easyweather.info</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2020 | Aiden M. Mayoros | Goodyear, AZ |
+            <br>
+            <span id="date"></span></p>
+        <script src="js/js.js"></script>
+    </footer>
+    <script src="js/banner.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/weatherapi.js"></script>
+    <script>
+		WebFont.load({
+			google: {
+			  families: [
+                 "Questrial",
+                 "Acme"
+			  ]
+			}
+	 	 });
+	</script>
+</body>
+
+</html>

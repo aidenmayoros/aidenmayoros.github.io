@@ -1,0 +1,36 @@
+/* Display for the Tablet view */
+@media only screen and (min-width: 32.5em) {
+
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navigation li {
+        display: flex;
+    }
+
+    main {
+        font-size: 1.3em;
+    }
+
+    .town,
+    .section3 {
+        margin: 1em;
+    }
+
+    .town-data {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+   }
+
+   .town-data-section {
+       height: max-content;
+   }
+}

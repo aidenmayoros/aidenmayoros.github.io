@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the Home page for Preston Town">
+    <link href="css.css" rel="stylesheet">
+    <link href="medium.css" rel="stylesheet">
+    <link href="large.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Preston Town Home Page</title>
+</head>
+
+<body>
+    
+        <div id="banner">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        </div>
+    
+    <header>
+        <img id="icon" src="/lesson3/images/Weathericon.png" alt="Icon image for Easy Weather Info">
+        <section id="headerdiv">
+            <h1>Easy Weather Info</h1>
+            <div id="moto">Making Weather Info Easy!</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li id="menu"><a onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="homePage/index.html">Home</a></li>
+            <li><a class="current" href="">Preston</a></li>
+            <li><a href="/lesson11/sodaSprings/sodaSprings.html">Soda Springs</a></li>
+            <li><a href="/lesson11/FishHaven/fishHaven.html">Fish Haven</a></li>
+            <li><a href="/lesson11/stormCenter/stormcenter.html">Storm Center</a></li>
+            <li><a href="/lesson11/gallery/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section1">
+            <div>
+                <picture>
+                    <source srcset="images/smallheroimage400px.jpg" media="(max-width: 400px)">
+                    <source srcset="images/mediumheroimage800px.jpg" media="(min-width: 400px) and (max-width: 960px">
+                    <source srcset="images/largehero1278.jpg" media="(min-width: 960px)">
+                    <img class="hero" src="images/heroimage.jpg" alt="A image of a sunset forrest">
+                </picture>
+            </div>
+            <div class="weathersummary">
+                <h3>Weather Summary:</h3>
+                <p>Currently: <span id="current"></span></p>
+                <p>Temperature: <span id="temp"></span>° F</p>
+                <p>Wind Speed: <span id="wind"></span> Mph</p>
+                <p>Wind Chill:<span id="windchill"></span>° F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+            </div>
+        </section>
+
+        <section class="section2">
+            <h3 class="forecastheader">5 day Forecast:</h3>
+            <div class="container">
+                <div class="forcast-card">
+                  <div class="forcast-day-header" id="day0"></div>
+                  <div class="forcast-day-content">
+                    <img src="" id="weather-icon0" alt="Weather Icon">
+                    <div class="forcast-day-content-temp" id="forcast0"></div>
+                  </div>
+                </div>
+                <div class="forcast-card">
+                  <div class="forcast-day-header" id="day1"></div>
+                  <div class="forcast-day-content">
+                    <img src="" id="weather-icon1" alt="Weather Icon">
+                    <div class="forcast-day-content-temp" id="forcast1"></div>
+                  </div>
+                </div>
+                <div class="forcast-card">
+                  <div class="forcast-day-header" id="day2"></div>
+                  <div class="forcast-day-content">
+                    <img src="" id="weather-icon2" alt="Weather Icon">
+                    <div class="forcast-day-content-temp" id="forcast2"></div>
+                  </div>
+                </div>
+                <div class="forcast-card">
+                  <div class="forcast-day-header" id="day3"></div>
+                  <div class="forcast-day-content">
+                    <img src="" id="weather-icon3" alt="Weather Icon">
+                    <div class="forcast-day-content-temp" id="forcast3"></div>
+                  </div>
+                </div>
+                <div class="forcast-card">
+                  <div class="forcast-day-header" id="day4"></div>
+                  <div class="forcast-day-content">
+                    <img src="" id="weather-icon4" alt="Weather Icon">
+                    <div class="forcast-day-content-temp" id="forcast4"></div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <section class="section3">
+            
+            <h3>How Big Can Lightning Get?</h3>
+            <p><em>By Emma Bryce - Live Science Contributor December 14, 2019</em></p>
+
+            <div class="article">
+                <img id="articleimg" src="/lesson11/gallery/images/lightning350x200.jpg" alt="image of a man working at his desk with his laptop">
+                <p>On Oct. 22, 2017, storm clouds gathering above the central United States released a flash of lightning so huge that it illuminated the skies above Texas, Oklahoma and Kansas. Horizontally spanning more than 310 miles (500 kilometers) across these three states, the jolt was so unprecedented that a group of researchers wrote a study about it, describing it as a "megaflash": It was one of the longest lightning flashes ever recorded.</p>
+
+                <p>Typically, regular lightning flashes measure between just 0.6 miles and 20 miles (1 and 20 km) in length. But as increasingly sophisticated mapping techniques have revealed, some truly colossal bolts are crackling above our heads. These recent discoveries raise an interesting question: How big can lightning actually get? And should we be worried about these atmospheric heavyweights? Lightning arises in storm clouds when strong positive charge develops in one region of the cloud and strong negative charge develops in another, creating electrical forces between them. "A lightning flash is initiated in a region where the electrical forces are extremely strong. They become strong enough that the air can't withstand the electrical force anymore and breaks down," said Don MacGorman, a physicist and senior researcher at the National Ocean and Atmospheric Administration (NOAA), and an author of the paper about the 2017 megaflash.</p>
+
+                <p>That means that as the electric force grows, it breaks down the air's insulating power, which usually keeps areas of different charge separate from each other. Researchers thinks this occurs because the build up of the excessive electrical force starts to accelerate free electrons in the air — those not attached to an atom or a molecule — which in turn knock other electrons loose from their atoms and molecules, explained MacGorman. This continues, accelerating more and more electrons: "Scientists call this process an electron avalanche, and it's what we mean when we say the air breaks down," MacGorman told Live Science.</p>
+
+            </div>
+        </section>
+
+        <section class="section4">
+            <h3>Contact Info:</h3>
+            <div class="contact">
+                <img id="map" src="images/prestonmap.png" alt="a image of the map of preston">
+
+                <div>
+                    <p>Easy Weather Info</p>
+                    <p>Preston, Idaho</p>
+                    <p>(444)555-5555</p>
+                    <p>Info@easyweather.info</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2020 | Aiden M. Mayoros | Goodyear, AZ |
+            <br>
+            <span id="date"></span></p>
+        <script src="js/js.js"></script>
+    </footer>
+    <script src="js/banner.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/weatherapi.js"></script>
+    <script>
+		WebFont.load({
+			google: {
+			  families: [
+                 "Questrial",
+                 "Acme"
+			  ]
+			}
+	 	 });
+	</script>
+</body>
+
+</html>
