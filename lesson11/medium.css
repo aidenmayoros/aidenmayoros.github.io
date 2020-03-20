@@ -18,7 +18,12 @@
         font-size: .7em;
         top: 45px;
         left: 35px;
-        
+
     }
 
+    .eventsData {
+        margin-left: 5em;
+        margin-right: 5em;
+        
+    }
 }

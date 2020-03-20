@@ -150,7 +150,24 @@ main {
 .section3 {
     background-color: #C9C9C9;
     border-radius: .5em;
+    padding: .5em;
+}
 
+.townEvents {
+    background-color: #C9C9C9;
+    border-radius: .5em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    padding: .5em;
+    text-align: center;
+    
+}
+
+.eventsData {
+    background-color: white;
+    border-radius: .5em;
+    padding: .5em;
+    border: black 2px solid;
 }
 
 .article {
