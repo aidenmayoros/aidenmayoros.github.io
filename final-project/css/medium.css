@@ -1,0 +1,36 @@
+/* Display for the Tablet view */
+@media only screen and (min-width: 32.5em) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navigation li {
+        display: flex;
+    }
+    
+    .section1 {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .section1 img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .trip_name {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .trip_content {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
