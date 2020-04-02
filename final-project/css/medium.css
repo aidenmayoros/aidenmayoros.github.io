@@ -19,6 +19,10 @@
         justify-content: space-evenly;
     }
 
+    .section1_headers {
+        font-size: 1.5em;
+    }
+
     .section1 img {
         width: 100%;
         margin: 0;

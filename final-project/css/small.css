@@ -20,6 +20,7 @@ header {
     align-items: center;
     background-color: #c2dfe3;
     margin-bottom: 1em;
+    font-size: .7em;
 
 }
 
@@ -71,7 +72,7 @@ nav a {
     padding: 1em 0em;
     text-align: center;
     box-shadow: 4px 4px 8px;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .section1_headers a {
@@ -96,6 +97,7 @@ nav a {
     margin-top: 1em;
     margin-left: 1em;
     border: 2px black solid;
+    font-size: .8em;
 }
 
 .trip_name {

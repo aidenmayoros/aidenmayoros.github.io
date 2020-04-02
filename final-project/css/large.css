@@ -1,5 +1,9 @@
 /* Display for desktop view */
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 65em) {
+    header {
+        font-size: 1em;
+    }
+    
     .section1 {
         width: 100%;
         flex-direction: row;
