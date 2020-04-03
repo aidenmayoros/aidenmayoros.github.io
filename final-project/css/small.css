@@ -28,6 +28,13 @@ ul {
     list-style-type: none;
 }
 
+.current {
+    background-color: #c2dfe3;
+    color: black;
+    padding: .2em;
+    box-shadow: 4px 4px 8px;
+}
+
 nav ul {
     display: flex;
     flex-direction: column;
@@ -35,12 +42,12 @@ nav ul {
     text-align: center;
     text-decoration: none;
     background-color: #5c6b73;
-    color: white;
     padding: .5em;
     font-size: 120%;
 }
 
-nav a {
+
+nav li a{
     color: white;
     text-decoration: none;
 }
@@ -48,6 +55,7 @@ nav a {
 .navigation li {
     display: none;
 }
+
 
 .responsive li {
     display: block;

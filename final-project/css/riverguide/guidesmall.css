@@ -1,0 +1,34 @@
+#profiles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    background-color: silver;
+    width: 80%;
+    padding: 1.2em;
+    margin-bottom: -.1em;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 8px;
+}
+
+.profile-image {
+    width: 80%;
+    box-shadow: 4px 4px 8px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    background-color: silver;
+    width: 80%;
+    padding: 1.2em;
+    margin-bottom: 1.2em;
+    box-shadow: 4px 4px 8px;
+}

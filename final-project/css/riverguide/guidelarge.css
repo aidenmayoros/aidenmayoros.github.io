@@ -1,0 +1,26 @@
+/* Display for desktop view */
+@media only screen and (min-width: 65em) {
+
+    #profiles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .profile {
+        font-size: 1.2em;
+        
+    }
+
+    .info {
+        font-size: 1.2em;
+        
+    }
+
+    .profile-image {
+        width: 50%;
+    }
+
+}
