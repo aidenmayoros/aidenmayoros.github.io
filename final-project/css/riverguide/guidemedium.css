@@ -1,10 +1,16 @@
 /* Display for the Tablet view */
 @media only screen and (min-width: 32.5em) {
     .profile {
-        font-size: 1.5em;
+        font-size: 1.2em;
+        width: 70%;
     }
 
     .info {
-        font-size: 1.5em;
+        font-size: 1.2em;
+        width: 70%;
+    }
+
+    .profile-image {
+        width: 50%;
     }
 }
