@@ -9,7 +9,7 @@
 .profile {
     display: flex;
     flex-direction: column;
-    background-color: silver;
+    background-color: #9c9c9c;
     width: 80%;
     padding: 1.2em;
     margin-bottom: -.1em;

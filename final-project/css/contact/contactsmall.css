@@ -1,0 +1,72 @@
+.location_section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.2em;
+    justify-content: space-evenly;
+}
+
+.left_side_contact {
+    width: 100%;
+}
+
+.map-responsive {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+}
+
+.address {
+    font-size: 1.2em;
+}
+
+.form_container {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    margin-right: 0;
+}
+
+.row {
+    padding: .5em;
+}
+
+.name {
+    padding-bottom: .5em;
+    float: left;
+}
+
+.input_box {
+    width: 100%;
+}
+
+input {
+    padding: .5em;
+    background-color: #c2dfe3;
+    box-shadow: 1px 2px 2px;
+    border: white;
+    border-radius: .2em;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    padding: .5em;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: .2em;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+#sumbit_button {
+    float: left;
+    width: 100%;
+}
