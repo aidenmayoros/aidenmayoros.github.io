@@ -11,6 +11,9 @@
     <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
+    <link href="css/reservations/small.css" rel="stylesheet">
+    <link href="css/reservations/medium.css" rel="stylesheet">
+    <link href="css/reservations/large.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -42,7 +45,106 @@
     </nav>
 
     <main>
+        <div class="content_container">
+        <section class="adventure_table">
+            <h2>Trip Details:</h2>
+            <table>
+                <tr>
+                    <th>Adventures:</th>
+                    <th>Length:</th>
+                    <th>Skill Level:</th>
+                    <th>Cost:</th>
+                </tr>
+                <tr>
+                    <td>All Day Adventure:</td>
+                    <td>4.2 Miles</td>
+                    <td>beginner</td>
+                    <td>$29.99 a Person</td>
+                </tr>
+                <tr>
+                    <td>Rock the Boat:</td>
+                    <td>2.1 Miles</td>
+                    <td>Experienced</td>
+                    <td>$29.99 a Person</td>
+                </tr>
+                <tr>
+                    <td>Spartan Test:</td>
+                    <td>6 Miles</td>
+                    <td>Expert</td>
+                    <td>$50.00 a Person</td>
+                </tr>
+            </table>
+        </section>
         
+        <section class="right_side_content">
+            <h2>Choose your Trip:</h2>
+            <div class="form_container">
+                <form>
+                    <div class="row">
+                        <div class="name">
+                            <label for="fname"><b>First Name*</b></label>
+                        </div>
+                        <div class="input_box">
+                            <input type="text" name="name" id="name" pattern="[A-Za-9] {1,5}" placeholder="Your Name" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="name">
+                            <label for="lname"><b>Last Name*</b></label>
+                        </div>
+                        <div class="input_box">
+                            <input type="text" name="name" id="name" pattern="[A-Za-9] {1,5}" placeholder="Your Name" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="name">
+                            <label for="phone"><b>Phone number:</b></label>
+                        </div>
+                        <div class="input_box">
+                            <input type="tel" name="phone" id="phone" pattern="[A-Za-9] {1,5}" placeholder="343-697-4020">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="name">
+                            <label for="email"><b>Email*</b></label>
+                        </div>
+                        <div class="input_box">
+                            <input type="email" name="email" id="email" placeholder="youremail@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="name">
+                            <label for="region"><b>Trip:</b></label><br>
+                        </div>
+                            <div class="input_box">
+                                <select id="select">
+                                    <option>Select Trip ...</option>
+                                    <option value="all-day-adventure">All Day Adventure</option>
+                                    <option value="rock-the-boat">Rock The Boat</option>
+                                    <option value="spartan-test">Spartan Test</option>
+                                </select>
+                            </div><br><br>
+                        
+                    </div>
+
+                    <div class="row">
+                        <div class="name">
+                            <label><b>Questions or Concerns:</b></label>
+                        </div>
+                        <div>
+                            <textarea id="additional" maxlength="250" placeholder="Please add any additional comments you may have"
+                            cols="40" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" id="sumbit_button" value="Submit Info">
+                </form>
+            </div>
+        </section>
+        </div>
 
     </main>
 
