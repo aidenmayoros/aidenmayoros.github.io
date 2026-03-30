@@ -8,23 +8,40 @@ import ProjectsArchive from './ProjectsArchive';
 const darkTheme = createTheme({
 	palette: {
 		mode: 'dark',
+		primary: {
+			main: '#4fd1c5',
+		},
+		background: {
+			default: '#071120',
+			paper: '#0f1d33',
+		},
 		text: {
-			primary: 'rgb(176, 169, 159)',
+			primary: '#e5edf8',
+			secondary: '#b2c3d8',
 		},
 	},
 	typography: {
-		fontFamily: 'Inter, sans-serif', // Set the font family
+		fontFamily: '"Space Grotesk", "DM Sans", sans-serif',
 	},
 	components: {
 		MuiButton: {
 			styleOverrides: {
 				contained: {
-					border: '2px solid rgb(97, 234, 213)',
-					color: 'rgb(97, 234, 213)',
+					borderRadius: '999px',
+					textTransform: 'none',
+					fontWeight: 600,
 				},
 				outlined: {
-					borderColor: 'rgb(97, 234, 213)',
-					color: 'rgb(97, 234, 213)',
+					borderRadius: '999px',
+					textTransform: 'none',
+					fontWeight: 600,
+				},
+			},
+		},
+		MuiChip: {
+			styleOverrides: {
+				root: {
+					borderRadius: '999px',
 				},
 			},
 		},

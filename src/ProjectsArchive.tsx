@@ -19,17 +19,19 @@ function ProjectsArchive() {
 	};
 
 	return (
-		<Box>
-			<Box pt={4} pl={2}>
+		<Box sx={{ maxWidth: '980px', mx: 'auto', px: { xs: 2, md: 3 }, pb: 4 }}>
+			<Box pt={4}>
 				<IconButton onClick={() => handleBackButtonClick()}>
-					<ArrowBack sx={{ color: '#2dd4bfcf' }} />
-					<Typography color={'#2dd4bfcf'}>Aiden Mayoros</Typography>
+					<ArrowBack sx={{ color: 'var(--accent-strong)' }} />
+					<Typography color={'var(--accent-strong)'}>Aiden Mayoros</Typography>
 				</IconButton>
 				<Typography
 					variant='h3'
-					color={'white'}
 					pt={1}
-					sx={{ textAlign: { xs: 'left', md: 'center' } }}>
+					sx={{
+						textAlign: { xs: 'left', md: 'center' },
+						fontFamily: '"Space Grotesk", sans-serif',
+					}}>
 					All Projects
 				</Typography>
 			</Box>
@@ -39,15 +41,22 @@ function ProjectsArchive() {
 				justifyContent={'center'}
 				alignItems={'center'}
 				sx={{ p: 2 }}>
-				<Table sx={{ maxWidth: { xs: '100vw', md: '35vw', lg: '25vw' } }}>
+				<Table
+					sx={{
+						maxWidth: { xs: '100vw', md: '70vw', lg: '56vw' },
+						backgroundColor: 'rgba(255, 255, 255, 0.02)',
+						border: '1px solid var(--line-soft)',
+						borderRadius: '20px',
+						overflow: 'hidden',
+					}}>
 					<TableHead>
 						<TableRow>
 							<TableCell
-								sx={{ color: 'white', borderBottom: '1px solid #cbd5e11a' }}>
+								sx={{ color: 'white', borderBottom: '1px solid var(--line-soft)' }}>
 								Year
 							</TableCell>
 							<TableCell
-								sx={{ color: 'white', borderBottom: '1px solid #cbd5e11a' }}>
+								sx={{ color: 'white', borderBottom: '1px solid var(--line-soft)' }}>
 								Project Link
 							</TableCell>
 						</TableRow>
@@ -55,17 +64,19 @@ function ProjectsArchive() {
 					<TableBody>
 						{projects.map((project, index) => (
 							<TableRow key={index}>
-								<TableCell sx={{ borderBottom: '1px solid #cbd5e11a' }}>
+								<TableCell sx={{ borderBottom: '1px solid var(--line-soft)' }}>
 									{project.year}
 								</TableCell>
 								<TableCell
 									sx={{
-										borderBottom: '1px solid #cbd5e11a',
+										borderBottom: '1px solid var(--line-soft)',
 									}}>
 									<Link
 										href={project.appLink}
 										underline='hover'
-										color={'#2dd4bfcf'}>
+										color={'var(--accent-strong)'}
+										target='_blank'
+										rel='noopener noreferrer'>
 										{project.projectName}
 									</Link>
 								</TableCell>

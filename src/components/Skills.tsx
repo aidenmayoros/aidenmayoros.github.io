@@ -34,24 +34,32 @@ const skillsList = [
 function Skills() {
 	return (
 		<Box display={'flex'} flexDirection={'column'} gap={2}>
-			<Typography variant='h4' color={'white'}>
+			<Typography variant='h5' sx={{ fontFamily: '"Space Grotesk", sans-serif' }}>
 				Skills
 			</Typography>
-			<Box display={'flex'} flexWrap={'wrap'} gap={'16px'}>
+			<Box display={'flex'} flexWrap={'wrap'} gap={'12px'}>
 				{skillsList.map((skill) => (
 					<Box
 						key={skill.skillName}
 						sx={{
-							backgroundColor: '#2dd4bfcf',
-							p: 1,
+							backgroundColor: 'rgba(79, 209, 197, 0.12)',
+							border: '1px solid rgba(79, 209, 197, 0.2)',
+							px: 1.2,
+							py: 0.8,
 							display: 'flex',
 							alignItems: 'center',
 							justifyContent: 'center',
-							borderRadius: '4px',
+							borderRadius: '999px',
 							gap: '8px',
+							'&:hover': {
+								backgroundColor: 'rgba(79, 209, 197, 0.2)',
+								transition: 'all 180ms ease',
+							},
 						}}>
 						<img src={skill.image} alt={skill.skillName} width={30} />
-						<Typography sx={{ color: 'black' }}>{skill.skillName}</Typography>
+						<Typography sx={{ color: 'var(--accent-strong)', fontSize: '0.94rem' }}>
+							{skill.skillName}
+						</Typography>
 					</Box>
 				))}
 			</Box>

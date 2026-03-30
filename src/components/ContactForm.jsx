@@ -1,4 +1,3 @@
-import React, { useRef } from "react";
 import { useState } from "react";
 import { Typography, Grid, TextField, Button, Box } from "@mui/material";
 import Alert from "@mui/material/Alert";
@@ -8,8 +7,7 @@ import emailjs from "emailjs-com";
 function ContactForm() {
   const [open, setOpen] = useState(false);
   const [state, setState] = useState(false);
-
-  const form = useRef();
+  const [isSending, setIsSending] = useState(false);
 
   const handleClose = (event, reason) => {
     if (reason === "clickaway") {
@@ -21,6 +19,7 @@ function ContactForm() {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSending(true);
 
     emailjs
       .sendForm(
@@ -34,11 +33,14 @@ function ContactForm() {
           console.log(result.text, "Message Sent");
           setState(true);
           setOpen(true);
+          setIsSending(false);
+          e.target.reset();
         },
         (error) => {
           console.log(error.text, "ERROR message not sent");
           setState(false);
           setOpen(true);
+          setIsSending(false);
         },
       );
   };
@@ -48,7 +50,7 @@ function ContactForm() {
       display={"flex"}
       flexDirection={"column"}
       sx={{
-        maxWidth: "80%",
+        maxWidth: { xs: "100%", lg: "80%" },
         pt: 4,
         pb: 4,
         pr: { lg: 4 },
@@ -58,11 +60,13 @@ function ContactForm() {
     >
       <Typography
         variant="h4"
-        color={"white"}
         gutterBottom
-        sx={{ pt: 10, pb: 1 }}
+        sx={{ pt: 1, pb: 1, fontFamily: '"Space Grotesk", sans-serif' }}
       >
         Contact
+      </Typography>
+      <Typography color="var(--text-secondary)" sx={{ mb: 3 }}>
+        If you are hiring, collaborating, or just want to connect, send me a message.
       </Typography>
       <Box component="form" onSubmit={sendEmail}>
         <Grid container spacing={2}>
@@ -99,8 +103,13 @@ function ContactForm() {
             />
           </Grid>
           <Grid item xs={12}>
-            <Button variant="outlined" color="primary" type="submit">
-              Send Message
+            <Button
+              variant="outlined"
+              color="primary"
+              type="submit"
+              disabled={isSending}
+            >
+              {isSending ? "Sending..." : "Send Message"}
             </Button>
           </Grid>
         </Grid>
