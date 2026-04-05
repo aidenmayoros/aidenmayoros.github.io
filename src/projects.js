@@ -1,5 +1,27 @@
 const projects = [
   {
+    projectName: "Morongo Basin Ambulance Website",
+    smallDescription:
+      "Custom React rebuild of a legacy WordPress website for a local ambulance provider, focused on trust, readability, and mobile-first usability.",
+    img: "/images/mbambulance-preview.png",
+    pathLink: "/mbambulance",
+    challenges:
+      "The biggest challenge was modernizing an existing public-facing healthcare site without losing its brand identity or content familiarity. I had to translate a WordPress structure into reusable React sections, improve navigation and information hierarchy, and make sure important services and calls to action stayed easy to find across desktop and mobile.",
+    knowledgeLearned:
+      "I learned how to approach a redesign as a product and communication problem, not just a visual one. This project strengthened my skills in component architecture, Tailwind-based UI systems, and building cleaner, maintainable frontends for real organizations with real users.",
+    technologiesUsed: [
+      "React",
+      "Vite",
+      "JavaScript",
+      "Tailwind CSS",
+      "ShadCN UI",
+      "Leaflet",
+      "Responsive Design",
+    ],
+    appLink: "https://www.mbambulance.org",
+    year: "2026",
+  },
+  {
     projectName: "MyFlix Movie App",
     smallDescription:
       "React CRUD app which allows users to signup, login, browse movies and save some to a favorites list.",
