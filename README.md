@@ -1,30 +1,74 @@
-# React + TypeScript + Vite
+# Aiden Mayoros Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A production-ready personal portfolio built to present my work, skills, and developer story to hiring teams.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Site: [aidenmayoros.com](https://aidenmayoros.com)
 
-## Expanding the ESLint configuration
+## Snapshot
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This portfolio is a React + TypeScript application designed for clarity, speed, and strong first impressions.
+It focuses on:
 
-- Configure the top-level `parserOptions` property like this:
+- A clean hero section with quick access to resume and social profiles
+- Scroll-based sections for About, Projects, Skills, and Contact
+- A featured project preview list with direct links
+- A full project archive route
+- Mobile-friendly layout and polished visual styling
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Built With
+
+- React
+- TypeScript
+- Vite
+- Material UI (MUI)
+- React Router
+- EmailJS
+
+## Local Development
+
+### 1. Clone
+
+```bash
+git clone https://github.com/aidenmayoros/aidenmayoros.github.io.git
+cd aidenmayoros.github.io
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### 2. Install
+
+```bash
+npm install
+```
+
+### 3. Start Dev Server
+
+```bash
+npm run dev
+```
+
+### 4. Build
+
+```bash
+npm run build
+```
+
+### 5. Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Available Scripts
+
+- `npm run dev`: Start local dev server
+- `npm run build`: Create production build in `dist/`
+- `npm run preview`: Preview production build locally
+- `npm run lint`: Run ESLint
+
+## Author
+
+**Aiden Mayoros**
+
+- GitHub: [@aidenmayoros](https://github.com/aidenmayoros)
+- LinkedIn: [Aiden Mayoros](https://www.linkedin.com/in/aiden-mayoros/)
