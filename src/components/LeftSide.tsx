@@ -56,7 +56,7 @@ function LeftSide() {
 					fontWeight={700}
 					sx={{
 						mt: 1,
-						fontFamily: '"Space Grotesk", sans-serif',
+						fontFamily: '"Inter", sans-serif',
 						fontSize: { xs: '2.1rem', md: '2.7rem' },
 					}}>
 					Aiden Mayoros
@@ -118,7 +118,7 @@ function LeftSide() {
 								alt='GitHub'
 								style={{ width: '200px', height: '200px' }}
 							/>
-						} // Insert your image JSX here
+						}
 						icon={<GitHubIcon />}
 					/>
 					<TooltippedIconButton
@@ -129,7 +129,7 @@ function LeftSide() {
 								alt='LinkedIn'
 								style={{ width: '200px', height: '200px' }}
 							/>
-						} // Insert your image JSX here
+						}
 						icon={<LinkedInIcon />}
 					/>
 					<TooltippedIconButton
@@ -140,7 +140,7 @@ function LeftSide() {
 								alt='Resume'
 								style={{ width: '200px', height: '200px' }}
 							/>
-						} // Insert your image JSX here
+						}
 						icon={<AssignmentInd />}
 					/>
 				</Box>

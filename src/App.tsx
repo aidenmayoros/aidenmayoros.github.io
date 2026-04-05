@@ -12,16 +12,16 @@ const darkTheme = createTheme({
 			main: '#4fd1c5',
 		},
 		background: {
-			default: '#071120',
-			paper: '#0f1d33',
+			default: '#061020',
+			paper: '#0b1a31',
 		},
 		text: {
-			primary: '#e5edf8',
-			secondary: '#b2c3d8',
+			primary: '#edf2f8',
+			secondary: '#adc0d7',
 		},
 	},
 	typography: {
-		fontFamily: '"Space Grotesk", "DM Sans", sans-serif',
+		fontFamily: '"Inter", sans-serif',
 	},
 	components: {
 		MuiButton: {

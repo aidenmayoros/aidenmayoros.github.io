@@ -34,30 +34,38 @@ const skillsList = [
 function Skills() {
 	return (
 		<Box display={'flex'} flexDirection={'column'} gap={2}>
-			<Typography variant='h5' sx={{ fontFamily: '"Space Grotesk", sans-serif' }}>
+			<Typography
+				variant='h5'
+				fontWeight={600}
+				sx={{ fontFamily: '"Inter", sans-serif', fontSize: '1.25rem' }}>
 				Skills
 			</Typography>
-			<Box display={'flex'} flexWrap={'wrap'} gap={'12px'}>
+			<Box display={'flex'} flexWrap={'wrap'} gap={'10px'}>
 				{skillsList.map((skill) => (
 					<Box
 						key={skill.skillName}
 						sx={{
 							backgroundColor: 'rgba(79, 209, 197, 0.12)',
-							border: '1px solid rgba(79, 209, 197, 0.2)',
-							px: 1.2,
+							border: '1px solid rgba(79, 209, 197, 0.22)',
+							px: 1.4,
 							py: 0.8,
 							display: 'flex',
 							alignItems: 'center',
 							justifyContent: 'center',
 							borderRadius: '999px',
 							gap: '8px',
+							transition: 'all 180ms ease',
 							'&:hover': {
 								backgroundColor: 'rgba(79, 209, 197, 0.2)',
-								transition: 'all 180ms ease',
 							},
 						}}>
-						<img src={skill.image} alt={skill.skillName} width={30} />
-						<Typography sx={{ color: 'var(--accent-strong)', fontSize: '0.94rem' }}>
+						<img src={skill.image} alt={skill.skillName} width={24} />
+						<Typography
+							sx={{
+								color: 'var(--accent-strong)',
+								fontSize: '0.81rem',
+								fontWeight: 500,
+							}}>
 							{skill.skillName}
 						</Typography>
 					</Box>

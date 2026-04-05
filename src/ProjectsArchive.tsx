@@ -1,12 +1,4 @@
-import { Box, Typography, IconButton } from '@mui/material';
-import {
-	Table,
-	TableBody,
-	TableCell,
-	TableHead,
-	TableRow,
-	Link,
-} from '@mui/material';
+import { Box, Typography, IconButton, Chip } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { ArrowBack } from '@mui/icons-material';
 import projects from './projects';
@@ -14,76 +6,132 @@ import projects from './projects';
 function ProjectsArchive() {
 	const navigate = useNavigate();
 
-	const handleBackButtonClick = () => {
-		navigate('/');
-	};
-
 	return (
-		<Box sx={{ maxWidth: '980px', mx: 'auto', px: { xs: 2, md: 3 }, pb: 4 }}>
-			<Box pt={4}>
-				<IconButton onClick={() => handleBackButtonClick()}>
-					<ArrowBack sx={{ color: 'var(--accent-strong)' }} />
-					<Typography color={'var(--accent-strong)'}>Aiden Mayoros</Typography>
+		<Box sx={{ maxWidth: '900px', mx: 'auto', px: { xs: 2, md: 4 }, pb: 8 }}>
+			<Box pt={5} pb={4}>
+				<IconButton
+					onClick={() => navigate('/')}
+					sx={{
+						color: 'var(--accent-strong)',
+						gap: 0.5,
+						'&:hover': { backgroundColor: 'rgba(79, 209, 197, 0.08)' },
+					}}>
+					<ArrowBack fontSize='small' />
+					<Typography
+						sx={{
+							color: 'var(--accent-strong)',
+							fontSize: '0.9rem',
+							fontWeight: 500,
+						}}>
+						Aiden Mayoros
+					</Typography>
 				</IconButton>
 				<Typography
 					variant='h3'
-					pt={1}
+					fontWeight={700}
 					sx={{
-						textAlign: { xs: 'left', md: 'center' },
-						fontFamily: '"Space Grotesk", sans-serif',
+						mt: 2,
+						fontFamily: '"Inter", sans-serif',
+						fontSize: { xs: '2rem', md: '2.5rem' },
 					}}>
 					All Projects
 				</Typography>
+				<Typography
+					sx={{
+						mt: 1,
+						color: 'var(--text-secondary)',
+						fontSize: '0.95rem',
+						maxWidth: '50ch',
+					}}>
+					A complete archive of everything I've built — from full-stack apps to
+					small experiments.
+				</Typography>
 			</Box>
 
-			<Box
-				display={'flex'}
-				justifyContent={'center'}
-				alignItems={'center'}
-				sx={{ p: 2 }}>
-				<Table
-					sx={{
-						maxWidth: { xs: '100vw', md: '70vw', lg: '56vw' },
-						backgroundColor: 'rgba(255, 255, 255, 0.02)',
-						border: '1px solid var(--line-soft)',
-						borderRadius: '20px',
-						overflow: 'hidden',
-					}}>
-					<TableHead>
-						<TableRow>
-							<TableCell
-								sx={{ color: 'white', borderBottom: '1px solid var(--line-soft)' }}>
-								Year
-							</TableCell>
-							<TableCell
-								sx={{ color: 'white', borderBottom: '1px solid var(--line-soft)' }}>
-								Project Link
-							</TableCell>
-						</TableRow>
-					</TableHead>
-					<TableBody>
-						{projects.map((project, index) => (
-							<TableRow key={index}>
-								<TableCell sx={{ borderBottom: '1px solid var(--line-soft)' }}>
-									{project.year}
-								</TableCell>
-								<TableCell
+			<Box display='flex' flexDirection='column' gap={1.5}>
+				{projects.map((project, index) => (
+					<a
+						href={project.appLink}
+						key={index}
+						target='_blank'
+						rel='noopener noreferrer'
+						style={{ textDecoration: 'none' }}>
+						<Box
+							sx={{
+								display: 'flex',
+								alignItems: { xs: 'flex-start', sm: 'center' },
+								flexDirection: { xs: 'column', sm: 'row' },
+								gap: { xs: 1.5, sm: 3 },
+								p: { xs: 2, sm: 2.5 },
+								borderRadius: '14px',
+								border: '1px solid var(--line-soft)',
+								backgroundColor: 'rgba(255, 255, 255, 0.02)',
+								transition: 'all 0.25s ease',
+								'&:hover': {
+									backgroundColor: 'rgba(79, 209, 197, 0.06)',
+									borderColor: 'rgba(79, 209, 197, 0.3)',
+									transform: 'translateY(-2px)',
+									cursor: 'pointer',
+								},
+							}}>
+							<Typography
+								sx={{
+									color: 'var(--text-muted)',
+									fontSize: '0.85rem',
+									fontWeight: 500,
+									minWidth: '44px',
+									fontFamily: '"Inter", sans-serif',
+								}}>
+								{project.year}
+							</Typography>
+							<Box sx={{ flex: 1 }}>
+								<Typography
 									sx={{
-										borderBottom: '1px solid var(--line-soft)',
+										color: 'var(--text-primary)',
+										fontWeight: 600,
+										fontSize: '1rem',
 									}}>
-									<Link
-										href={project.appLink}
-										underline='hover'
-										color={'var(--accent-strong)'}
-										target='_blank'
-										rel='noopener noreferrer'>
-										{project.projectName}
-									</Link>
-								</TableCell>
-							</TableRow>
-						))}
-					</TableBody>
-				</Table>
+									{project.projectName}
+								</Typography>
+								{project.smallDescription && (
+									<Typography
+										sx={{
+											color: 'var(--text-secondary)',
+											fontSize: '0.85rem',
+											mt: 0.5,
+											lineHeight: 1.5,
+										}}>
+										{project.smallDescription}
+									</Typography>
+								)}
+							</Box>
+							<Box
+								display='flex'
+								flexWrap='wrap'
+								gap={0.8}
+								sx={{ maxWidth: { sm: '260px' }, justifyContent: 'flex-end' }}>
+								{project.technologiesUsed
+									.filter((t: string) => t)
+									.slice(0, 4)
+									.map((tech: string) => (
+										<Chip
+											key={`${project.projectName}-${tech}`}
+											label={tech}
+											size='small'
+											variant='outlined'
+											sx={{
+												backgroundColor: 'rgba(79, 209, 197, 0.09)',
+												color: 'var(--accent-strong)',
+												borderColor: 'rgba(79, 209, 197, 0.25)',
+												fontSize: '0.7rem',
+												height: 24,
+											}}
+										/>
+									))}
+							</Box>
+						</Box>
+					</a>
+				))}
 			</Box>
 		</Box>
 	);

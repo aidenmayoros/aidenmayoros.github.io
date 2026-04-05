@@ -1,5 +1,4 @@
-// RightSide.jsx
-import { Box } from '@mui/material';
+import { Box, Divider } from '@mui/material';
 import About from './About';
 import ProjectPreviews from './ProjectPreviews';
 import ContactForm from './ContactForm';
@@ -13,15 +12,17 @@ function RightSide() {
 				pb: { xs: 6, lg: 8 },
 				display: 'flex',
 				flexDirection: 'column',
-				gap: 3,
+				gap: 0,
 			}}>
-			<Box id='about' className='section fade-in fade-delay-1' sx={{ pt: 6 }}>
+			<Box id='about' className='fade-in fade-delay-1' sx={{ pt: 6 }}>
 				<About />
 			</Box>
-			<Box id='projects' className='section fade-in fade-delay-2'>
+			<Divider sx={{ borderColor: 'var(--line-soft)', my: 2 }} />
+			<Box id='projects' className='fade-in fade-delay-2'>
 				<ProjectPreviews />
 			</Box>
-			<Box id='contact' className='section fade-in fade-delay-3'>
+			<Divider sx={{ borderColor: 'var(--line-soft)', my: 2 }} />
+			<Box id='contact' className='fade-in fade-delay-3'>
 				<ContactForm />
 			</Box>
 		</Box>
