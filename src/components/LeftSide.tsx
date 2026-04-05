@@ -37,77 +37,100 @@ function LeftSide() {
 				zIndex: 1,
 			}}>
 			<Box
-				display={'flex'}
-				flexDirection={'column'}
-				color={'white'}
+				display='flex'
+				flexDirection='column'
 				className='fade-in'
-				sx={{ py: { xs: 8, lg: 12 }, maxWidth: '560px' }}>
+				sx={{ py: { xs: 7, lg: 0 }, maxWidth: '500px', gap: 3 }}>
+				<Box>
+					<Typography
+						sx={{
+							letterSpacing: '0.18em',
+							textTransform: 'uppercase',
+							fontSize: '0.72rem',
+							fontWeight: 600,
+							color: 'var(--accent)',
+						}}>
+						Portfolio
+					</Typography>
+					<Typography
+						fontWeight={700}
+						sx={{
+							mt: 1,
+							fontFamily: '"Inter", sans-serif',
+							fontSize: { xs: '2.2rem', md: '3.2rem' },
+							lineHeight: 1.12,
+							color: 'var(--text-primary)',
+						}}>
+						Aiden Mayoros
+					</Typography>
+					<Typography
+						fontWeight={500}
+						sx={{
+							mt: 1.5,
+							color: 'var(--text-secondary)',
+							fontSize: { xs: '0.95rem', md: '1.06rem' },
+							lineHeight: 1.55,
+						}}>
+						Full Stack Web Developer focused on clean UX and solid engineering
+					</Typography>
+				</Box>
+
 				<Typography
 					sx={{
-						letterSpacing: '0.12em',
-						textTransform: 'uppercase',
-						fontSize: '0.78rem',
-						color: 'var(--accent-strong)',
+						lineHeight: 1.75,
+						maxWidth: '42ch',
+						color: 'var(--text-muted)',
+						fontSize: '0.93rem',
 					}}>
-					Portfolio
-				</Typography>
-				<Typography
-					variant='h3'
-					fontWeight={700}
-					sx={{
-						mt: 1,
-						fontFamily: '"Inter", sans-serif',
-						fontSize: { xs: '2.1rem', md: '2.7rem' },
-					}}>
-					Aiden Mayoros
-				</Typography>
-				<Typography
-					variant='subtitle1'
-					fontWeight={500}
-					color='var(--text-secondary)'
-					sx={{ mt: 0.5 }}>
-					Full Stack Web Developer focused on clean UX and solid engineering
-				</Typography>
-				<Typography
-					color='var(--text-secondary)'
-					sx={{ mt: 2.5, lineHeight: 1.7, maxWidth: '44ch' }}>
 					I build reliable web apps with React, TypeScript, and Node. This
 					portfolio highlights projects where I solved real product and technical
 					challenges from UI polish to backend architecture.
 				</Typography>
 
-				<Box display='flex' gap={1.5} mt={3}>
+				<Box display='flex' gap={1.5}>
 					<Button
 						variant='contained'
 						color='primary'
 						href='/AidenResume.pdf'
 						target='_blank'
-						rel='noopener noreferrer'>
+						rel='noopener noreferrer'
+						sx={{
+							px: 3.5,
+							py: 1.4,
+							fontSize: '0.875rem',
+							fontWeight: 600,
+							color: '#061020',
+						}}>
 						View Resume
 					</Button>
 					<Button
 						variant='outlined'
 						color='primary'
 						onClick={() => {
-							const projectsSection = document.getElementById('projects');
-							projectsSection?.scrollIntoView({ behavior: 'smooth' });
+							const el = document.getElementById('projects');
+							el?.scrollIntoView({ behavior: 'smooth' });
+						}}
+						sx={{
+							px: 3.5,
+							py: 1.4,
+							fontSize: '0.875rem',
+							fontWeight: 600,
 						}}>
 						View Work
 					</Button>
 				</Box>
-				<Box>
-					<Navbar />
-				</Box>
+
+				<Navbar />
+
 				<Box
-					pt={4}
 					display='flex'
 					sx={{
-						gap: 1,
-						border: '1px solid var(--line-soft)',
+						gap: 0.5,
+						border: '1px solid rgba(187, 210, 238, 0.12)',
 						borderRadius: '999px',
 						width: 'fit-content',
-						px: 1,
-						py: 0.4,
+						px: 0.8,
+						py: 0.5,
 						backgroundColor: 'rgba(255,255,255,0.03)',
 					}}>
 					<TooltippedIconButton
@@ -119,7 +142,7 @@ function LeftSide() {
 								style={{ width: '200px', height: '200px' }}
 							/>
 						}
-						icon={<GitHubIcon />}
+						icon={<GitHubIcon sx={{ color: 'var(--text-secondary)', fontSize: 20 }} />}
 					/>
 					<TooltippedIconButton
 						href='https://www.linkedin.com/in/aiden-mayoros/'
@@ -130,7 +153,7 @@ function LeftSide() {
 								style={{ width: '200px', height: '200px' }}
 							/>
 						}
-						icon={<LinkedInIcon />}
+						icon={<LinkedInIcon sx={{ color: 'var(--text-secondary)', fontSize: 20 }} />}
 					/>
 					<TooltippedIconButton
 						href='/AidenResume.pdf'
@@ -141,7 +164,7 @@ function LeftSide() {
 								style={{ width: '200px', height: '200px' }}
 							/>
 						}
-						icon={<AssignmentInd />}
+						icon={<AssignmentInd sx={{ color: 'var(--text-secondary)', fontSize: 20 }} />}
 					/>
 				</Box>
 			</Box>
